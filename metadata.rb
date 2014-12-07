@@ -1,3 +1,4 @@
+name "capnproto"
 maintainer "ADADA, LLC"
 maintainer_email "chef@adadabase.com"
 description "Install/configure Cap'n Proto"
