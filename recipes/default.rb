@@ -45,6 +45,7 @@ unless File.exists?("/usr/local/lib/libcapnp.so")
   execute "make-install-capnproto" do
     cwd "#{Chef::Config[:file_cache_path]}/capnproto-c++-#{version}"
     #command "CXX=clang++ ./configure && make -j6 check && make install"
-    command "./configure && make -j6 check && make install"
+    #command "./configure && make -j6 check && make install"
+    command "./configure && make install"
   end
 end
